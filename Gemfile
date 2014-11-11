@@ -10,4 +10,4 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-gem 'pfrpg_core', path: "../pfrpg_core/"
+gem 'pfrpg_core'
