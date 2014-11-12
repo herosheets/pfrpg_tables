@@ -1,4 +1,4 @@
-class PfrpgTables::Tables
+module PfrpgTables::Tables
   require 'pfrpg_tables/tables/attribute_modifier'
   require 'pfrpg_tables/tables/attributes'
   require 'pfrpg_tables/tables/languages'
