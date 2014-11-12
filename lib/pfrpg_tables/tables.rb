@@ -1,10 +1,10 @@
 class PfrpgTables::Tables
-  require_relative 'tables/attribute_modifier'
-  require_relative 'tables/attributes'
-  require_relative 'tables/languages'
-  require_relative 'tables/level_table'
-  require_relative 'tables/heroclasses'
-  require_relative 'tables/bonus'
-  require_relative 'tables/weapons'
-  require_relative 'tables/spells'
+  require 'pfrpg_tables/tables/attribute_modifier'
+  require 'pfrpg_tables/tables/attributes'
+  require 'pfrpg_tables/tables/languages'
+  require 'pfrpg_tables/tables/level_table'
+  require 'pfrpg_tables/tables/heroclasses'
+  require 'pfrpg_tables/tables/bonus'
+  require 'pfrpg_tables/tables/weapons'
+  require 'pfrpg_tables/tables/spells'
 end

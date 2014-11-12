@@ -26,3 +26,5 @@ class PfrpgTables::Tables::Spells
     ]
   end
 end
+
+require 'pfrpg_tables/tables/spells/spells_per_day'

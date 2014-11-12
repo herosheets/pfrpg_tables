@@ -12,7 +12,7 @@ module PfrpgTables
 
     def level_granted
       i = (1..levels.total).inject(0) do |sum, x|
-        choices = Tables::LevelTable.for_level(x)[:choices]
+        choices = PfrpgTables::Tables::LevelTable.for_level(x)[:choices]
         sum = sum + (choices.select { |c| choice_is_feat(c) }).size
       end
       return i
@@ -39,7 +39,7 @@ module PfrpgTables
       choices = []
       lvls = @levels.parse
       lvls.keys.each do |hc|
-        clazz = Heroclass.by_name(hc)
+        clazz = PfrpgClasses::Heroclass.by_name(hc)
         level = lvls[hc]
         (1..level).each do |l|
           clazz.bonuses_for_level(l)[:choices].each do |choice|

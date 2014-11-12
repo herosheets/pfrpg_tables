@@ -10,7 +10,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 0,
                 :granted_features  => [ "track", "wildempathy"],
                 :choices => [ ChooseFavoredEnemy.new ],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 2
       bonus = { :base_attack_bonus => [2],
@@ -19,7 +19,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 0,
                 :granted_features  => [],
                 :choices => [ ChooseRangerCombatStyleFeat.new ],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 3
       bonus = { :base_attack_bonus => [3],
@@ -28,7 +28,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 1,
                 :granted_features  => ["endurance", "favoredterrain"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 4
       bonus = { :base_attack_bonus => [4],
@@ -37,7 +37,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 1,
                 :granted_features  => [ ],
                 :choices => [ChooseHuntersBond.new ],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 5
       bonus = { :base_attack_bonus => [5],
@@ -46,7 +46,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 1,
                 :granted_features  => [],
                 :choices => [ChooseFavoredEnemy.new],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 6
       bonus = { :base_attack_bonus => [6,1],
@@ -55,7 +55,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 2,
                 :granted_features  => [],
                 :choices => [ ChooseRangerCombatStyleFeat.new ],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 7
       bonus = { :base_attack_bonus => [7,2],
@@ -64,7 +64,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 2,
                 :granted_features  => ["woodlandstride"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 8
       bonus = { :base_attack_bonus => [8,3],
@@ -73,7 +73,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 2,
                 :choices => [],
                 :granted_features  => ["swifttracker"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 9
       bonus = { :base_attack_bonus => [9,4],
@@ -82,7 +82,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 3,
                 :granted_features  => ["evasion"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 10
       bonus = { :base_attack_bonus => [10,5],
@@ -91,7 +91,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 3,
                 :choices => [ ChooseFavoredEnemy.new, ChooseRangerCombatStyleFeat.new ],
                 :granted_features  => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 11
       bonus = { :base_attack_bonus => [11,6,1],
@@ -100,7 +100,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 3,
                 :choices => [],
                 :granted_features  => ["quarry"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 12
       bonus = { :base_attack_bonus => [12,7,2],
@@ -109,7 +109,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 4,
                 :choices => [],
                 :granted_features  => ["camouflage"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 13
       bonus = { :base_attack_bonus => [13,8,3],
@@ -118,7 +118,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 4,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 14
       bonus = { :base_attack_bonus => [14,9,4],
@@ -127,7 +127,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 4,
                 :choices => [ ChooseRangerCombatStyleFeat.new ],
                 :granted_features  => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 15
       bonus = { :base_attack_bonus => [15,10,5],
@@ -136,7 +136,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 5,
                 :choices => [ ChooseFavoredEnemy.new ],
                 :granted_features  => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 16
       bonus = { :base_attack_bonus => [16,11,6,1],
@@ -145,7 +145,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 5,
                 :choices => [],
                 :granted_features  => ["improvedevasion"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 17
       bonus = { :base_attack_bonus => [17,12,7,2],
@@ -154,7 +154,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 5,
                 :choices => [],
                 :granted_features  => ["hideinplainsight"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 18
       bonus = { :base_attack_bonus => [18,13,8,3],
@@ -163,7 +163,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 6,
                 :choices => [ ChooseRangerCombatStyleFeat.new ],
                 :granted_features  => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 19
       bonus = { :base_attack_bonus => [19,14,9,4],
@@ -172,7 +172,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 6,
                 :choices => [],
                 :granted_features  => ["improvedquarry"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     when 20
       bonus = { :base_attack_bonus => [20,15,10,5],
@@ -181,7 +181,7 @@ class PfrpgTables::Tables::Heroclasses::Ranger
                 :will_save         => 6,
                 :choices => [ ChooseFavoredEnemy.new ],
                 :granted_features  => ["masterhunter"],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Ranger(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
               }
     end
     bonus

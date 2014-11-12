@@ -11,7 +11,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :granted_features  => ["nature_sense", "orisons", "wild_empathy"],
                 :choices =>
                   [ ChooseNatureBond.new ],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 2
       bonus = { :base_attack_bonus => [1],
@@ -20,7 +20,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 3,
                 :granted_features  => ["woodland_stride"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 3
       bonus = { :base_attack_bonus => [2],
@@ -29,7 +29,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 3,
                 :granted_features  => ["trackless_step"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 4
       bonus = { :base_attack_bonus => [3],
@@ -38,7 +38,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 4,
                 :granted_features  => ["resist_natures_lure", "wild_shape"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 5
       bonus = { :base_attack_bonus => [3],
@@ -47,7 +47,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 4,
                	:granted_features => [],
 		:choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 6
       bonus = { :base_attack_bonus => [4],
@@ -56,7 +56,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 5,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 7
       bonus = { :base_attack_bonus => [5],
@@ -65,7 +65,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 5,
                 :granted_features => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 8
       bonus = { :base_attack_bonus => [6,1],
@@ -74,7 +74,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 6,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 9
       bonus = { :base_attack_bonus => [6,1],
@@ -83,7 +83,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 6,
                 :granted_features  => ["venom_immunity"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 10
       bonus = { :base_attack_bonus => [7,2],
@@ -92,7 +92,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 7,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 11
       bonus = { :base_attack_bonus => [8,3],
@@ -101,7 +101,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 7,
                 :granted_features => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 12
       bonus = { :base_attack_bonus => [9,4],
@@ -110,7 +110,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 8,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 13
       bonus = { :base_attack_bonus => [9,4],
@@ -119,7 +119,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 8,
                 :granted_features  => ["a_thousand_faces"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 14
       bonus = { :base_attack_bonus => [10,5],
@@ -128,7 +128,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 9,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 15
       bonus = { :base_attack_bonus => [11,6,1],
@@ -137,7 +137,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 9,
                 :granted_features  => ["timeless_body"],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 16
       bonus = { :base_attack_bonus => [12,7,2],
@@ -146,7 +146,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 10,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 17
       bonus = { :base_attack_bonus => [12,7,2],
@@ -155,7 +155,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 10,
 		:granted_features => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 18
       bonus = { :base_attack_bonus => [13,8,3],
@@ -164,7 +164,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 11,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 19
       bonus = { :base_attack_bonus => [14,9,4],
@@ -173,7 +173,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 11,
 		:granted_features => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     when 20
       bonus = { :base_attack_bonus => [15,10,5],
@@ -182,7 +182,7 @@ class PfrpgTables::Tables::Heroclasses::Druid
                 :will_save         => 12,
                 :granted_features  => [],
                 :choices => [],
-                :spells_per_day => Tables::Spells::SpellsPerDay.Druid(level)
+                :spells_per_day => PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
               }
     end
     bonus
