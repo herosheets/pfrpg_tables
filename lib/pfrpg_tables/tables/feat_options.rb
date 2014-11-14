@@ -22,7 +22,7 @@ class PfrpgTables::Tables::FeatOptions
         'Universalist'
       ]
     when 'skills'
-      Skill.skill_list.map { |x| x.description }
+      PfrpgSkills::Skill.skill_list.map { |x| x.description }
     end
   end
 end
