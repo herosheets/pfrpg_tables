@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = "Generic PFRPG tables"
   s.description = "tables"
 
-  s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{lib}/**/*", "LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 end
